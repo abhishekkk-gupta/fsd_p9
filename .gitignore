@@ -1,0 +1,43 @@
+# ==============================
+# BACKEND
+# ==============================
+
+# SQLite database (your local data, don't share)
+backend/pm.db
+
+# Python cache files
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+
+# Virtual environment folder
+backend/venv/
+backend/env/
+
+# ==============================
+# FRONTEND
+# ==============================
+
+# Node modules (huge folder, gets reinstalled via npm install)
+frontend/node_modules/
+
+# Production build (gets regenerated via npm run build)
+frontend/build/
+
+# ==============================
+# GENERAL
+# ==============================
+
+# VS Code settings
+.vscode/
+
+# Windows junk files
+Thumbs.db
+Desktop.ini
+
+# Mac junk files
+.DS_Store
+
+# Environment variable files (never upload secrets)
+.env
+*.env
