@@ -4,9 +4,10 @@ from flask_cors import CORS
 import sqlite3
 import bcrypt
 from datetime import datetime
+import os
 
 app = Flask(__name__)
-app.config["JWT_SECRET_KEY"] = "pm_secret_key_2024"
+app.config["JWT_SECRET_KEY"] = os.environ.get("JWT_SECRET_KEY", "pm_secret_key_2024")
 jwt = JWTManager(app)
 CORS(app)
 
